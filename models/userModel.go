@@ -14,11 +14,11 @@ type User struct {
 	Email         *string            `json:"email" validate:"required, email"`
 	Phone         *string            `json:"phone" validate:"required"`
 	Token         *string            `json:"token"`
-	User_type     *string            `json:"user_type" validate:"required, eq=ADMIN|eq=USER"`
-	Refresh_Token *string            `json:"refresh_token"`
+	User_type     *string            `json:"user_type" validate:"required, eq=ADMIN|eq=USER"` //eq is just like enum
+	Refresh_token *string            `json:"refresh_token"`
 	Created_at    time.Time          `json:"created_at"`
 	Updated_at    time.Time          `json:"updated_at"`
-	User_id       *string            `json:"user_id"`
+	User_id       string             `json:"user_id"`
 }
 
 //Here we are basically defining the schema for a user

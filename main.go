@@ -3,8 +3,7 @@ package main
 import (
 	"os"
 
-	routes "go-lang-jwt/routes"
-
+	"github.com/Raunak173/go-lang-jwt/routes"
 	"github.com/gin-gonic/gin"
 )
 

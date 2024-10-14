@@ -1,8 +1,7 @@
 package routes
 
 import (
-	controller "go-lang-jwt/controllers"
-
+	controller "github.com/Raunak173/go-lang-jwt/controllers"
 	"github.com/gin-gonic/gin"
 )
 
